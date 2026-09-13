@@ -1,0 +1,54 @@
+# Python 虚拟环境与工具
+.venv/
+.uv-tools/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python 打包与缓存
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# 模型权重、检查点与大数据集
+checkpoints/
+clip_pretrain/
+data/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.gguf
+
+# Rust
+target/
+*.rlib
+*.so
+*.pyd
+*.dll
+*.dylib
+
+# 实验输出
+wandb/
+runs/
+outputs/
+*.log
+
+# 密钥
+.env
+.env.local
+
+# IDE 与操作系统临时文件
+.claude/
+.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

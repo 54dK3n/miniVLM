@@ -1,0 +1,21 @@
+[package]
+name = "tinyvlm_rs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "tinyvlm_rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22", features = ["extension-module"] }
+cudarc = { version = "0.19", default-features = false, features = [
+    "std",
+    "driver",
+    "nvrtc",
+    "dynamic-loading",
+    "cuda-12080",
+] }
+
+[profile.release]
+opt-level = 3
